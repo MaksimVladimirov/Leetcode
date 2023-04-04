@@ -18,8 +18,9 @@
 // Output: false
 
 function isValid(s) {
-	const stack = [];
-  	for (const c of s) {
+  const stack = [];
+	
+  for (const c of s) {
     if (c === "(") stack.push(")");
     else if (c === "{") stack.push("}");
     else if (c === "[") stack.push("]");
