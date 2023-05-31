@@ -21,3 +21,5 @@ function debounce(callback, delay) {
 
 const fetching = debounce(fetchUrl.bind(user), 400);
 fetching(1);
+fetching(2);
+fetching(2);
