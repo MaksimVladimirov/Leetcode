@@ -18,7 +18,7 @@
 
 const isPalindrome = (num) => {
 	let numToStr = num.toString();
-	return numToStr == numToStr.split('').reverse().join('')
+	return numToStr === numToStr.split('').reverse().join('')
 };
 
-console.log(isPalindrome(121))
+console.log(isPalindrome(1211))
