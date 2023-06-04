@@ -21,25 +21,22 @@ function isValid(s) {
   const stack = [];
 	
   for (const c of s) {
-    if (c === "(") {
-      stack.push(")")
-      console.log(stack);
-  }
-    else if (c === "{") {
-      stack.push("}");
-      console.log(stack);
-
-  }
-    else if (c === "[") {
-      stack.push("]")
-      console.log(stack);
-
+    if (c === '{') {
+      stack.push('}')
     }
+
+    else if (c === '[') {
+      stack.push(']');
+    }
+
+    else if (c === '(') {
+      stack.push(')');
+    }
+
     else if (stack.length === 0 || stack.pop() !== c) return false;
-    }
-    console.log(stack)
-
-  return stack.length === 0;
+  }
+  
+  return stack.length === 0; 
 };
 
 console.log(isValid("(({}))[[[]]]"))
