@@ -23,19 +23,22 @@ function isValid(s) {
   for (const c of s) {
     if (c === "(") {
       stack.push(")")
-    }
-
+      console.log(stack);
+  }
     else if (c === "{") {
       stack.push("}");
-    }
+      console.log(stack);
 
+  }
     else if (c === "[") {
       stack.push("]")
+      console.log(stack);
+
     }
 
     else if (stack.length === 0 || stack.pop() !== c) return false;
-  }
-
+    }
+    console.log(stack)
 
   return stack.length === 0;
 };

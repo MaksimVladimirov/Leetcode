@@ -27,13 +27,13 @@ var containsDuplicate = function(nums) {
     return false;
 };
 
-console.log(containsDuplicate([1,2,3,1]))
+console.log(containsDuplicate([1,2,3,4,4]))
 
 
 
 var containsDuplicate = function(nums) {
   const notSimilar = new Set(nums);
-  return notSimilar.size === nums.length;
+  return notSimilar.size !== nums.length;
 };
 
-console.log(containsDuplicate([1,2,3,4]))
+console.log(containsDuplicate([1,2,3,4,4]))
